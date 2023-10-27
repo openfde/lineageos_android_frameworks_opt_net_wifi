@@ -896,7 +896,7 @@ public class WifiNative {
                 return false;
             }
             mWifiCondManager.setOnServiceDeadCallback(new WificondDeathHandlerInternal());
-            mWifiCondManager.tearDownInterfaces();
+            //mWifiCondManager.tearDownInterfaces();
             mWifiVendorHal.registerRadioModeChangeHandler(
                     new VendorHalRadioModeChangeHandlerInternal());
             mNetdWrapper = mWifiInjector.makeNetdWrapper();
